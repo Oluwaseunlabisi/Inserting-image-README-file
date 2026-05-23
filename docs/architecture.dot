@@ -1,0 +1,13 @@
+digraph Architecture {
+
+    rankdir=LR;
+
+    node [shape=box style=filled fillcolor=lightblue];
+
+    User -> GitHub;
+    GitHub -> "GitHub Actions";
+    "GitHub Actions" -> Docker;
+    Docker -> AzureVM;
+    AzureVM -> Nginx;
+    Nginx -> Application;
+}
